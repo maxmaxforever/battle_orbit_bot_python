@@ -1,0 +1,3565 @@
+
+C:\Users\Alin\Downloads\battle_orbit_bot>python main.py
+[13:06:24] INFO     main — Window offset: (-8, -8)
+[13:06:24] INFO     main — Starting bot in 3 seconds — switch to game window …
+[Capture] Found window 'Space aces | Game'  hwnd=132768
+[Detector] Loaded model from 'vision/weights/best.pt'
+[13:06:29] INFO     bot.fsm — Bot started — press Ctrl+C to stop.
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 117, in _step
+    self._do_idle()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 140, in _do_idle
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  IDLE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:06:30] INFO     bot.fsm — Short move — spacemap click (1246, 396)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:06:33] INFO     bot.fsm — Short move — spacemap click (449, 715)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:06:36] INFO     bot.fsm — Short move — spacemap click (1456, 641)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:06:38] INFO     bot.fsm — Long roam — minimap click (1696, 965)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:06:42] INFO     bot.fsm — Short move — spacemap click (509, 496)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:06:45] INFO     bot.fsm — Short move — spacemap click (1225, 750)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:06:49] INFO     bot.fsm — Short move — spacemap click (1042, 523)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:06:52] INFO     bot.fsm — Long roam — minimap click (1703, 1031)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:06:59] INFO     bot.fsm — Short move — spacemap click (640, 259)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:02] INFO     bot.fsm — Short move — spacemap click (707, 336)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:04] INFO     bot.fsm — Short move — spacemap click (1068, 790)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:07] INFO     bot.fsm — Long roam — minimap click (1700, 952)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+[13:07:13] INFO     bot.fsm — SCAN → LOOT  (box at (1600, 424))
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 152, in _do_scan
+    log.info(f"SCAN → LOOT  (box at {boxes[0].center})")
+Message: 'SCAN → LOOT  (box at (1600, 424))'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 153, in _do_scan
+    self._transition(State.LOOT)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → LOOT'
+Arguments: ()
+[13:07:14] INFO     bot.fsm — Moving to loot box at (1592, 416)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 251, in _do_loot
+    self._idle_briefly()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 310, in _idle_briefly
+    self._transition(State.IDLE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  LOOT → IDLE'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 252, in _do_loot
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  IDLE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:15] INFO     bot.fsm — Short move — spacemap click (1395, 259)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:18] INFO     bot.fsm — Short move — spacemap click (516, 798)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:21] INFO     bot.fsm — Short move — spacemap click (296, 441)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:24] INFO     bot.fsm — Long roam — minimap click (1624, 966)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:29] INFO     bot.fsm — Short move — spacemap click (626, 492)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:32] INFO     bot.fsm — Short move — spacemap click (539, 734)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:35] INFO     bot.fsm — Short move — spacemap click (776, 779)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:37] INFO     bot.fsm — Long roam — minimap click (1805, 995)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:43] INFO     bot.fsm — Short move — spacemap click (248, 791)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:46] INFO     bot.fsm — Short move — spacemap click (989, 619)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:49] INFO     bot.fsm — Short move — spacemap click (1129, 406)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:07:52] INFO     bot.fsm — Long roam — minimap click (1888, 968)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+[13:07:57] INFO     bot.fsm — SCAN → LOOT  (box at (676, 658))
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 152, in _do_scan
+    log.info(f"SCAN → LOOT  (box at {boxes[0].center})")
+Message: 'SCAN → LOOT  (box at (676, 658))'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 153, in _do_scan
+    self._transition(State.LOOT)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → LOOT'
+Arguments: ()
+[13:07:57] INFO     bot.fsm — Moving to loot box at (668, 650)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 251, in _do_loot
+    self._idle_briefly()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 310, in _idle_briefly
+    self._transition(State.IDLE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  LOOT → IDLE'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 252, in _do_loot
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  IDLE → SCAN'
+Arguments: ()
+[13:07:59] INFO     bot.fsm — SCAN → LOOT  (box at (645, 535))
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 152, in _do_scan
+    log.info(f"SCAN → LOOT  (box at {boxes[0].center})")
+Message: 'SCAN → LOOT  (box at (645, 535))'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 153, in _do_scan
+    self._transition(State.LOOT)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → LOOT'
+Arguments: ()
+[13:07:59] INFO     bot.fsm — Moving to loot box at (637, 527)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 251, in _do_loot
+    self._idle_briefly()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 310, in _idle_briefly
+    self._transition(State.IDLE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  LOOT → IDLE'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 252, in _do_loot
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  IDLE → SCAN'
+Arguments: ()
+[13:08:00] INFO     bot.fsm — SCAN → LOOT  (box at (1027, 561))
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 152, in _do_scan
+    log.info(f"SCAN → LOOT  (box at {boxes[0].center})")
+Message: 'SCAN → LOOT  (box at (1027, 561))'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 153, in _do_scan
+    self._transition(State.LOOT)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → LOOT'
+Arguments: ()
+[13:08:01] INFO     bot.fsm — Moving to loot box at (1019, 553)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 251, in _do_loot
+    self._idle_briefly()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 310, in _idle_briefly
+    self._transition(State.IDLE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  LOOT → IDLE'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 252, in _do_loot
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  IDLE → SCAN'
+Arguments: ()
+[13:08:02] INFO     bot.fsm — SCAN → LOOT  (box at (742, 451))
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 152, in _do_scan
+    log.info(f"SCAN → LOOT  (box at {boxes[0].center})")
+Message: 'SCAN → LOOT  (box at (742, 451))'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 153, in _do_scan
+    self._transition(State.LOOT)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → LOOT'
+Arguments: ()
+[13:08:03] INFO     bot.fsm — Moving to loot box at (734, 443)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 251, in _do_loot
+    self._idle_briefly()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 310, in _idle_briefly
+    self._transition(State.IDLE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  LOOT → IDLE'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 129, in _step
+    self._do_loot(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 252, in _do_loot
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  IDLE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:04] INFO     bot.fsm — Short move — spacemap click (891, 681)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:07] INFO     bot.fsm — Short move — spacemap click (243, 569)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:09] INFO     bot.fsm — Short move — spacemap click (819, 512)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:12] INFO     bot.fsm — Long roam — minimap click (1623, 905)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:18] INFO     bot.fsm — Short move — spacemap click (318, 282)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:22] INFO     bot.fsm — Short move — spacemap click (55, -2)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:25] INFO     bot.fsm — Short move — spacemap click (87, 10)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:28] INFO     bot.fsm — Long roam — minimap click (1776, 923)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:33] INFO     bot.fsm — Short move — spacemap click (254, 295)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:36] INFO     bot.fsm — Short move — spacemap click (903, 393)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:39] INFO     bot.fsm — Short move — spacemap click (123, 446)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 132, in _step
+    self._do_move(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 292, in _do_move
+    self._transition(State.SCAN)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  MOVE → SCAN'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 35: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 167, in _do_scan
+    log.debug("SCAN → MOVE  (nothing visible)")
+Message: 'SCAN → MOVE  (nothing visible)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 37: character maps to <undefined>
+Call stack:
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 124, in <module>
+    main()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 120, in main
+    run_bot()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\main.py", line 52, in run_bot
+    BotFSM(window_offset=offset).run()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 87, in run
+    self._tick()
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 104, in _tick
+    self._step(detections, frame)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 120, in _step
+    self._do_scan(detections)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 168, in _do_scan
+    self._transition(State.MOVE)
+  File "C:\Users\Alin\Downloads\battle_orbit_bot\bot\fsm.py", line 300, in _transition
+    log.debug(f"  {self.state.value} → {new_state.value}")
+Message: '  SCAN → MOVE'
+Arguments: ()
+[13:08:42] INFO     bot.fsm — Long roam — minimap click (1832, 969)
